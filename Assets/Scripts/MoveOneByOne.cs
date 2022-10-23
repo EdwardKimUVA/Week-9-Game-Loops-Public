@@ -32,7 +32,7 @@ public class MoveOneByOne : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ObjectsToMove[currentIndexOfObjectToMove].transform.Translate(.01f, 0, 0);
+        ObjectsToMove[currentIndexOfObjectToMove].transform.Translate(.1f, 0, 0);
 
         if (Vector3.Distance(ObjectsToMove[currentIndexOfObjectToMove].transform.position, currentObjectStartPosition) > 10)
         {
